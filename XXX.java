@@ -51,9 +51,9 @@ public class XXX extends Application {
         find.setLayoutX(10);
         find.setLayoutY(50);
 
-        Label label=new Label("Результат:");
+        Label label=new Label();
         label.setLayoutX(90);
-        label.setLayoutY(90);
+        label.setLayoutY(50);
 
 
 
@@ -84,28 +84,28 @@ public class XXX extends Application {
 
             System.out.println("x1=");
             System.out.println("x2=");
-            aa1=" x1= /n + x2= ";
+            aa1 = "X1 = " + "\nX2 = ";
          
         }
         //a i b =0
         if (a == 0 && b == 0 && c != 0) {
             System.out.println("x1=");
             System.out.println("x2=");
-            aa1="3";
+            aa1 = "X1 = " + "\nX2 = ";
          
         }
         //a i c=0
         if (a == 0 && b != 0 && c == 0) {
             System.out.println("x1=0.0");
             System.out.println("x2=0.0");
-            aa1="4";
+            aa1 = "X1 = " + "\nX2 = ";
            
         }
         //b i c =0
         if (a != 0 && b == 0 && c == 0) {
             System.out.println("x1=0.0");
             System.out.println("x2=0.0");
-            aa1="5";
+            aa1 = "X1 = " + "\nX2 = ";
            
         }
         //a=0
@@ -113,7 +113,7 @@ public class XXX extends Application {
             double temp_a = -c / b;
             System.out.println("x1=" + temp_a);
             System.out.println("x2=" + temp_a);
-            aa1="6";
+            aa1 = "X1 = " + temp_a + "\nX2 = " +temp_a;
           
         }
         //b=0
@@ -122,18 +122,19 @@ public class XXX extends Application {
             if (temp > 0) {
                 System.out.println("x1=" + temp);
                 System.out.println("x2=" + -temp);
+                aa1 = "X1 = " + temp + "\nX2 = " +-temp;
             } else {
                 System.out.println("x1=");
                 System.out.println("x2=");
+                aa1 = "X1 = " + "\nX2 = ";
             }
-            aa1="6";
+            
            
         }
         //c=0
         if (a != 0 && b != 0 && c == 0) {
-            System.out.println("x1=0.0");
-            System.out.println("x2=" + -b / a);
-            aa1="7";
+            double temp1= -b / a;
+            aa1 = "X1 =0.0 " + "\nX2 = "+temp1 ;
            
         }
 
@@ -141,7 +142,7 @@ public class XXX extends Application {
             if (d < 0.0) {
                 System.out.println("x1=");
                 System.out.println("x2=");
-                aa1="8";
+                aa1 = "X1 = " + "\nX2 = ";
                 
             }
 
@@ -149,16 +150,14 @@ public class XXX extends Application {
                 double x3 = -b / (2.0 * a);
                 System.out.println("x1=" + x3);
                 System.out.println("x2=" + x3);
-                aa1="9";
+                aa1 = "X1 = " + x3 + "\nX2 = " + x3;
                
 
             }
             if (d > 0.0) {
                 double x1 = (-b + Math.sqrt(d)) / (2.0 * a);
                 double x2 = (-b - Math.sqrt(d)) / (2.0 * a);
-                System.out.println("x1=" + x1);
-                System.out.println("x2=" + x2);
-                aa1="10";
+                aa1 = "X1 = " + x1 + "\nX2 = " + x2;
              
 
             }
