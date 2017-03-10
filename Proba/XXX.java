@@ -72,7 +72,7 @@ public class XXX extends Application {
     public static void main(String[] args) {
         launch(args);}
 
-   public String go(String a1, String b1, String c1) {
+   private String go(String a1, String b1, String c1) {
         double a= parseDouble(a1);
         double b= parseDouble(b1);
         double c= parseDouble(c1);
@@ -165,4 +165,4 @@ public class XXX extends Application {
        return aa1;
    }
 }
-
+//FIN
