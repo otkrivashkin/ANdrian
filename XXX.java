@@ -21,28 +21,28 @@ public class XXX extends Application {
         TextField t1 = new TextField();
         t1.setLayoutX(29);
         t1.setLayoutY(10);
-        t1.setMaxWidth(40);
+        t1.setMaxWidth(60);
         Label l1 = new Label("a:");
         l1.setLayoutX(10);
         l1.setLayoutY(10);
         l1.setFont(new Font("Cambria", 18));
 
         TextField t2 = new TextField();
-        t2.setLayoutX(100);
+        t2.setLayoutX(121);
         t2.setLayoutY(10);
-        t2.setMaxWidth(40);
+        t2.setMaxWidth(60);
         Label l2 = new Label("b:");
-        l2.setLayoutX(82);
+        l2.setLayoutX(103);
         l2.setLayoutY(10);
         l2.setFont(new Font("Cambria", 18));
 
 
         TextField t3 = new TextField();
-        t3.setLayoutX(171);
+        t3.setLayoutX(209);
         t3.setLayoutY(10);
-        t3.setMaxWidth(40);
+        t3.setMaxWidth(60);
         Label l3 = new Label("c:");
-        l3.setLayoutX(154);
+        l3.setLayoutX(190);
         l3.setLayoutY(10);
         l3.setFont(new Font("Cambria", 18));
 
@@ -62,7 +62,7 @@ public class XXX extends Application {
         find.setOnAction(event ->
                 label.setText(go(t1.getText(), t2.getText(),t3.getText())));
 
-        Scene scene = new Scene(panel, 400, 150);
+        Scene scene = new Scene(panel, 400, 100);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Квадратне рівняння");
         primaryStage.show();
@@ -128,7 +128,7 @@ public class XXX extends Application {
                 System.out.println("x2=");
                 aa1 = "X1 = " + "\nX2 = ";
             }
-            
+
            
         }
         //c=0
